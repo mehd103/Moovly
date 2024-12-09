@@ -1,3 +1,13 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-header *ngIf="!isLoginPage">
+    <app-toolbar></app-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-router-outlet></ion-router-outlet>
+  </ion-content>
+
+  <ion-footer  *ngIf="!isLoginPage">
+    <app-navbar></app-navbar>
+  </ion-footer>
 </ion-app>

@@ -1,5 +1,10 @@
 {
   "name": "myApp",
-  "integrations": {},
-  "type": "angular"
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "android": {
+    "adbTimeout": 20000
+  }
 }
